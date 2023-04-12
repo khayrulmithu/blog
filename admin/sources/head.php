@@ -28,9 +28,9 @@
 	 
 	<title>Blog 64</title>
 
-	<nav class="navbar navbar-expand-lg navbar-dark" style="font-size: 20px; color: white; padding-bottom: 9px; background:rgb(90, 112, 126);">
+	<nav class="navbar navbar-expand-lg navbar-dark" style="font-size: 13px; color: white; padding-bottom: 9px; background:rgb(90, 112, 126);">
 
-		<div class="logo" style="padding-left: 10px; padding-right: 150px; padding-top: 0px; padding-bottom: 5px; font-size:px;">
+		<div class="logo" style="padding-left: 10px; padding-right: 100px; padding-top: 0px; padding-bottom: 5px; font-size:px;">
 				Blog Admin
 			</div>
 

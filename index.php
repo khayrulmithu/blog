@@ -16,11 +16,21 @@
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+<?php 
+
+ session_start();
+
+ include("sources/head.php"); 
+
+ ?>
+
 </head>
- <?php include("sources/head.php"); ?>
+ 
 <body>
 
 <?php 
+
+
 
 date_default_timezone_set("Asia/Dhaka");
 
@@ -91,6 +101,19 @@ switch ($a) {
 	case 'view':
 		include("sources/view.php");
 		break;
+
+	case 'login':
+		include("sources/login.php");
+		break;
+
+	case 'signup':
+		include("sources/signup.php");
+		break;
+
+	case 'logout':
+		include("sources/logout.php");
+		break;
+
 	
 	default:
 		include("sources/home.php");

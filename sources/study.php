@@ -1,4 +1,10 @@
 <?php 
+//session_start();
+
+if(!isset($_SESSION['login2'])){
+
+    header("location:./index.php?a=login");
+}
 $page = $_GET['a'];
 ?>
 
@@ -7,6 +13,14 @@ $page = $_GET['a'];
 <head>
 	<meta charset="utf-8">
 	<title></title>
+
+	<style type="text/css">
+		p{
+			text-align: justify;
+			font-size: 18px;
+		}
+	</style>
+
 </head>
 <body style="background: #c6efa9;">
 

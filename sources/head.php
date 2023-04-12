@@ -1,4 +1,16 @@
-<div>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	 
+	<title>Blog 64</title>
+
+</head>
+<body>
+
+<div style="width: 100%;  overflow: hidden; background-color:rgb(73, 99, 115);">
 
 	<?php 
 				$page = '1';
@@ -16,18 +28,11 @@
 				}
 	?>
 
-	<style>
 
-</style>
 
-	<meta charset="utf-8">
-	 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-	 
-	<title>Blog 64</title>
+	<nav class="navbar navbar-expand-lg navbar-dark" style="font-size: 13px; color: white; padding-bottom: 9px;  ">
 
-	<nav class="navbar navbar-expand-lg navbar-dark" style="font-size: 20px; color: white; padding-bottom: 9px; background:rgb(73, 99, 115)">
-
-		<div class="logo" style="padding-left: 10px; padding-right: 150px; padding-top: 0px; padding-bottom: 5px; font-size:px;">
+		<div class="logo" style="padding-left: 10px; padding-right: 100px; padding-top: 0px; padding-bottom: 5px; font-size:px;">
 			<a style="color: white;" href="http://localhost/blog/হোম">Blog</a>	
 			</div>
 
@@ -134,10 +139,41 @@
 
 					<?php 
 						if($page=='follow'){ ?>
-						<li class="nav-item"> <a class="page-link active" href="http://localhost/blog/ফলো-করুন"> ফলো করুন </a> </li><?php }
+						<li class="nav-item"> <a class="page-link active" href="http://localhost/blog/ফলো-করুন"> ফলো  </a> </li><?php }
 			
 						else { ?>
-							<li class="nav-item"> <a class="page-link" href="http://localhost/blog/ফলো-করুন"> ফলো করুন </a> </li><?php }
+							<li class="nav-item"> <a class="page-link" href="http://localhost/blog/ফলো-করুন"> ফলো </a> </li><?php }
+					?>
+
+
+					<?php 
+
+					if(!isset($_SESSION['login2'])){
+						if($page=='login'){ ?>
+						<li class="nav-item"> <a class="page-link active" href="http://localhost/blog/index.php?a=login"> login </a> </li><?php }
+			
+						else { ?>
+							<li class="nav-item"> <a class="page-link" href="http://localhost/blog/index.php?a=login"> login </a> </li><?php }
+					?>
+
+
+					<?php 
+						if($page=='signup'){ ?>
+						<li class="nav-item"> <a class="page-link active" href="http://localhost/blog/index.php?a=signup"> signup </a> </li><?php }
+			
+						else { ?>
+							<li class="nav-item"> <a class="page-link" href="http://localhost/blog/index.php?a=signup"> signup </a> </li><?php }
+					
+					} 
+
+					else{
+
+						?>
+							<li class="nav-item"> <a class="page-link" href="http://localhost/blog/index.php?a=logout"> logout </a> </li>
+
+							<?php
+					}
+
 					?>
 
 					
@@ -151,3 +187,6 @@
 	</nav>
 
 </div>
+
+</body>
+</html>

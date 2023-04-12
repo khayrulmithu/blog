@@ -103,7 +103,7 @@ if(isset($_POST['btn2'])){
 
 			<input style="width:330px; height: 45px; font-size: 22px; margin-bottom: 20px; " type="password" name="pass2" required placeholder ="Confirm your password"> <br>
 
-			<button class="btn btn-info" type="submit" name="btn2" style="width:330px; height: 45px; font-size: 22px; ">
+			<button class="btn btn-info" type="submit" name="btn2" style="width:330px; height: 45px; font-size: 22px; margin-bottom: 50px; ">
 				Update
 			</button>
 

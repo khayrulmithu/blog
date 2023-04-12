@@ -1,6 +1,10 @@
-
 <?php 
+//session_start();
 
+if(!isset($_SESSION['login2'])){
+
+    header("location:./index.php?a=login");
+}
 if(isset($_GET['b'])){
 
 	$page = $_GET['b'];

@@ -1,4 +1,10 @@
 <?php 
+//session_start();
+
+if(!isset($_SESSION['login2'])){
+
+    header("location:./index.php?a=login");
+}
 
 if(isset($_GET['id'])){
 
@@ -15,12 +21,17 @@ if(isset($_GET['id'])){
 	$cnt = $row['count'];
 	$cnt = $cnt+1;
 
-	$tim1 = date("h");
-	$tim2 = date("A");
+	$dat = date("d");
+	$dat2 = $row['dat2'];
 
 	//echo $tim1." ".$tim2;
 
-	if($tim1=='12' && $tim2=='AM') $cnt = 0;
+	if($dat!=$dat2){
+		$cnt = 1;
+
+		$sql= "UPDATE $page SET  dat2 = '$dat' WHERE id = $id ";
+		$result = mysqli_query($conn,$sql);
+	}
 
 	$sql= "UPDATE $page SET  count = $cnt WHERE id = $id ";
 	$result = mysqli_query($conn,$sql);
@@ -40,6 +51,15 @@ if(isset($_GET['id'])){
 <head>
 	<meta charset="utf-8">
 	<title></title>
+
+	<style type="text/css">
+		p{
+			text-align: justify;
+			font-size: 20px;
+		}
+	</style>
+
+
 </head>
 <body style="background: #c6efa9;">
 

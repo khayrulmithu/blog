@@ -2,6 +2,11 @@
   
 }
 
+p {
+  text-align: justify;
+  color: black;
+}
+
 .pagination a {
   color: black;
   

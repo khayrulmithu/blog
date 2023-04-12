@@ -30,6 +30,7 @@ if(isset($_POST['btn1'])){
 	$image= $_FILES['image']['name'];
 	//$date = $_POST['date'];
 	$date = date("d/m/Y");
+	$dat2 = date("d");
 
 	$page = $_GET['b'];
 
@@ -43,7 +44,7 @@ if(isset($_POST['btn1'])){
 
 	move_uploaded_file($_FILES['image']['tmp_name'], $pic);
 
-	$sql= "INSERT INTO $page SET title = '$title' , image = '$pic2' , description = '$description', post = '$post', dat = '$date' ";
+	$sql= "INSERT INTO $page SET title = '$title' , image = '$pic2' , description = '$description', post = '$post', dat = '$date',count=0, dat2='$dat2' ";
 
 	$result = mysqli_query($conn,$sql);
 

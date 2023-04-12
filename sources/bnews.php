@@ -1,4 +1,12 @@
 <?php 
+
+//session_start();
+
+if(!isset($_SESSION['login2'])){
+
+    header("location:./index.php?a=login");
+}
+
 $page = $_GET['a'];
 ?>
 
@@ -7,6 +15,14 @@ $page = $_GET['a'];
 <head>
 	<meta charset="utf-8">
 	<title></title>
+
+	<style type="text/css">
+		p{
+			text-align: justify;
+			font-size: 18px;
+		}
+	</style>
+
 </head>
 <body style="background: #c6efa9;">
 
@@ -102,6 +118,11 @@ $page = $_GET['a'];
 							<button class="btn" type="button" name="update" style="width:155px; margin-bottom:14px ; margin-left: 20px; background:#55ea65; height: 45px; font-size: 22px; ">
 
 								<?php echo $row['dat']; ?>
+							</button>
+
+							<button class="btn" type="button" name="update" style="width:155px; margin-bottom:14px ; margin-left: 20px; background:#55ea65; height: 45px; font-size: 20px; ">
+
+								<?php echo "Today View " . $row['count']; ?>
 							</button>
 			
 						</form>

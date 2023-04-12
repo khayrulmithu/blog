@@ -47,7 +47,7 @@ if(isset($_POST['btn'])){
 	$pass=$_POST['pass'];
 
 	$conn = mysqli_connect('localhost','root','','blog');
-	$sql= "SELECT * FROM user WHERE username = '$name' and password = '$pass' ";
+	$sql= "SELECT * FROM user WHERE username = '$name' and pass = '$pass' ";
 
 	$result = mysqli_query($conn,$sql);
 
@@ -65,7 +65,7 @@ if(isset($_POST['btn'])){
 
 		$row = mysqli_fetch_assoc($result);
 
-		if($row['username']!=$name and $row['password']==$pass ){
+		if($row['username']!=$name and $row['pass']==$pass ){
 
 			?>
 			<div class=" alert alert-danger" style="text-align: center; font-size: 15px; width:350px;">
@@ -75,7 +75,7 @@ if(isset($_POST['btn'])){
 			</div> <?php 
 		}
 
-		else if($row['password']!=$pass and $row['username']==$name){
+		else if($row['pass']!=$pass and $row['username']==$name){
 			?>
 			<div class=" alert alert-danger" style="text-align: center; font-size: 15px; width:350px;">
 				<button type="button" class="close" data-dismiss="alert">&times;</button>

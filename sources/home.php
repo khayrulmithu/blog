@@ -3,12 +3,20 @@
 <head>
 	<meta charset="utf-8">
 	<title></title>
+
+	<style type="text/css">
+		p{
+			text-align: justify;
+			font-size: 18px;
+		}
+	</style>
+
 </head>
-<body style="background: #c6efa9;">
+<body style="background: #c6efa9; ">
 
-	<div class="container">
+	<div class="container" >
 
-		<div class="row">
+		<div class="row" >
 
 			<div class="col-md-2">
 				
@@ -42,7 +50,7 @@
 
 					<div class="col-md-8">
 
-				<a href="./index.php?a=view&&id=<?php echo $row['id']; ?>&&page=<?php echo $page; ?>&&page-number=<?php echo $current_page; ?>">	<h2> <?php echo $row['title']; ?> </h2> </a>
+				<a href="./index.php?a=view&&id=<?php echo $row['id']; ?>&&page=<?php echo $page; ?>&&page-number=<?php echo $current_page; ?>">	<h3> <?php echo $row['title']; ?> </h3> </a>
 
 					<p> <?php echo $row['description']; ?> </p>
 
@@ -94,7 +102,7 @@
 
 					<div class="col-md-8">
 
-				<a href="./index.php?a=view&&id=<?php echo $row['id']; ?>&&page=<?php echo $page; ?>&&page-number=<?php echo $current_page; ?>">	<h2> <?php echo $row['title']; ?> </h2> </a>
+				<a href="./index.php?a=view&&id=<?php echo $row['id']; ?>&&page=<?php echo $page; ?>&&page-number=<?php echo $current_page; ?>">	<h3> <?php echo $row['title']; ?> </h3> </a>
 
 					<p> <?php echo $row['description']; ?> </p>
 
@@ -147,7 +155,7 @@
 
 					<div class="col-md-8">
 
-				<a href="./index.php?a=view&&id=<?php echo $row['id']; ?>&&page=<?php echo $page; ?>&&page-number=<?php echo $current_page; ?>">	<h2> <?php echo $row['title']; ?> </h2> </a>
+				<a href="./index.php?a=view&&id=<?php echo $row['id']; ?>&&page=<?php echo $page; ?>&&page-number=<?php echo $current_page; ?>">	<h3> <?php echo $row['title']; ?> </h3> </a>
 
 					<p> <?php echo $row['description']; ?> </p>
 
@@ -198,7 +206,7 @@
 
 					<div class="col-md-8">
 
-				<a href="./index.php?a=view&&id=<?php echo $row['id']; ?>&&page=<?php echo $page; ?>&&page-number=<?php echo $current_page; ?>">	<h2> <?php echo $row['title']; ?> </h2> </a>
+				<a href="./index.php?a=view&&id=<?php echo $row['id']; ?>&&page=<?php echo $page; ?>&&page-number=<?php echo $current_page; ?>">	<h3> <?php echo $row['title']; ?> </h3> </a>
 
 					<p> <?php echo $row['description']; ?> </p>
 
@@ -250,7 +258,7 @@
 
 					<div class="col-md-8">
 
-				<a href="./index.php?a=view&&id=<?php echo $row['id']; ?>&&page=<?php echo $page; ?>&&page-number=<?php echo $current_page; ?>">	<h2> <?php echo $row['title']; ?> </h2> </a>
+				<a href="./index.php?a=view&&id=<?php echo $row['id']; ?>&&page=<?php echo $page; ?>&&page-number=<?php echo $current_page; ?>">	<h3> <?php echo $row['title']; ?> </h3> </a>
 
 					<p> <?php echo $row['description']; ?> </p>
 
@@ -302,7 +310,7 @@
 
 					<div class="col-md-8">
 
-				<a href="./index.php?a=view&&id=<?php echo $row['id']; ?>&&page=<?php echo $page; ?>&&page-number=<?php echo $current_page; ?>">	<h2> <?php echo $row['title']; ?> </h2> </a>
+				<a href="./index.php?a=view&&id=<?php echo $row['id']; ?>&&page=<?php echo $page; ?>&&page-number=<?php echo $current_page; ?>">	<h3> <?php echo $row['title']; ?> </h3> </a>
 
 					<p> <?php echo $row['description']; ?> </p>
 
@@ -355,7 +363,7 @@
 
 					<div class="col-md-8">
 
-				<a href="./index.php?a=view&&id=<?php echo $row['id']; ?>&&page=<?php echo $page; ?>&&page-number=<?php echo $current_page; ?>">	<h2> <?php echo $row['title']; ?> </h2> </a>
+				<a href="./index.php?a=view&&id=<?php echo $row['id']; ?>&&page=<?php echo $page; ?>&&page-number=<?php echo $current_page; ?>">	<h3> <?php echo $row['title']; ?> </h3> </a>
 
 					<p> <?php echo $row['description']; ?> </p>
 
@@ -407,7 +415,7 @@
 
 					<div class="col-md-8">
 
-				<a href="./index.php?a=view&&id=<?php echo $row['id']; ?>&&page=<?php echo $page; ?>&&page-number=<?php echo $current_page; ?>">	<h2> <?php echo $row['title']; ?> </h2> </a>
+				<a href="./index.php?a=view&&id=<?php echo $row['id']; ?>&&page=<?php echo $page; ?>&&page-number=<?php echo $current_page; ?>">	<h3> <?php echo $row['title']; ?> </h3> </a>
 
 					<p> <?php echo $row['description']; ?> </p>
 
@@ -459,7 +467,7 @@
 
 					<div class="col-md-8">
 
-				<a href="./index.php?a=view&&id=<?php echo $row['id']; ?>&&page=<?php echo $page; ?>&&page-number=<?php echo $current_page; ?>">	<h2> <?php echo $row['title']; ?> </h2> </a>
+				<a href="./index.php?a=view&&id=<?php echo $row['id']; ?>&&page=<?php echo $page; ?>&&page-number=<?php echo $current_page; ?>">	<h3> <?php echo $row['title']; ?> </h3> </a>
 
 					<p> <?php echo $row['description']; ?> </p>
 
